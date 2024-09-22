@@ -197,10 +197,13 @@ hr {
     
 }
 
+
+
 .section__pic-container{
     display: flex;
-    height: 400px;
-    width: 400px;
+    justify-content: center;
+    height: 600px;
+    width: 600px;
     margin: auto 0;
 }
 
