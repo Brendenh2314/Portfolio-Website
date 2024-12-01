@@ -490,3 +490,38 @@ footer p{
     text-align: center;
     color: white;
 }
+
+/* Tab Buttons */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: .75rem;
+    margin-bottom: 2rem;
+}
+
+.tab-btn {
+    padding: .5rem; /* Increased padding for larger buttons */
+    width: 6rem; /* Same width as other buttons */
+    border-radius: 1rem; /* Matching the rounding of other buttons */
+    background: #1f1f1f;
+    color: white;
+    border: 1px solid rgb(200, 200, 200);
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600; /* Consistent boldness with other buttons */
+    transition: all 0.3s ease;
+}
+
+.tab-btn:hover {
+    background-color: rgb(200, 200, 200); /* Hover effect to match */
+    color: black;
+}
+
+/* Active Tab Button */
+.tab-btn.active-tab {
+    background-color: rgb(200, 200, 200);
+    color: black;
+    font-weight: bold;
+    border: 1px solid rgb(255, 255, 255);
+}

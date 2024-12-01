@@ -202,6 +202,20 @@
                             <article>
                                 <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
                                 <div>
+                                    <h3>Python</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
+                                    <h3>Pandas</h3>
+                                    <p>Intermediate</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                                <div>
                                     <h3>Tableau</h3>
                                     <p>Intermediate</p>
                                 </div>
@@ -223,7 +237,11 @@
         <section id="projects">
             <p class="section__text__p1">Check Out My</p>
             <h1 class="title">Projects</h1>
-            <div class="experience-details-container">
+            <div class="tabs">
+                <button class="tab-btn" onclick="showTab('swe')">Software</button>
+                <button class="tab-btn" onclick="showTab('data')">Data</button>
+            </div>
+            <div id="swe-projects" class="experience-details-container">
                 <div class="about-containers">
                     <div class="details-container color-container">
                         <div class="article-container">
@@ -253,6 +271,39 @@
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Brendenh2314/d424-software-engineering-capstone', '_blank')">Github</button>
                             <button class="btn btn-color-2 project-btn" onclick="window.open('https://vimeo.com/1010430153?share=copy', '_blank')">Live</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Data Projects -->
+            <div id="data-projects" class="experience-details-container" style="display: none;">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/Python_Project.PNG" alt="Python Data Analysis" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Python Data Analysis</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Brendenh2314/Python_Data_Analysis/tree/main', '_blank')">Github/Live</button>
+
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/mysql_workbench_img.jpg" alt="SQL Automated Data Cleaning" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">SQL Automated Data Cleaning</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://github.com/Brendenh2314/SQL_Automated_Data_Cleaning/tree/main', '_blank')">Github</button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/ER_Visit_Dashboard.PNG" alt="ER Visits Dashboard" class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">ER Visits Dashboard</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn" onclick="window.open('https://public.tableau.com/app/profile/brenden.hancock/viz/EmergencyRoomDashboard_17297232251830/EmergenceRoomVisitsDashboard', '_blank')">Live</button>
                         </div>
                     </div>
                 </div>
